@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_modal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="my_scripts.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- <h1>Naše Portfolio</h1>
+    <div>
+      <h2>Zahrada ve stylu Provence</h2>
+      <p>Voňavá oáza klidu inspirovaná jižní Francií</p>
+      <p>
+        Na této terase vznikl prostor, kde se snoubí elegance s přírodní
+        jednoduchostí. Dominantní levandule, kamenná dlažba, rustikální nábytek
+        a pergola porostlá zelení vytvářejí ideální zázemí pro odpočinek i
+        společná letní posezení. Zahrada plynule navazuje na obytný prostor domu
+        a nabízí celoroční krásu i praktické využití.
+      </p>
+      <h3>Hlavní prvky:</h3>
+      <ul>
+        <li>Terasa z přírodního kamene</li>
+        <li>Pergola s popínavými rostlinami</li>
+        <li>Bohaté výsadby levandule a středomořských bylin</li>
+        <li>
+          Dekorace v provensálském duchu (keramika, kov, patinované dřevo)
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>Minimalistická zahrada pro moderní bydlení</h2>
+      <p>Čisté linie. Jednoduchost. Klid.</p>
+
+      <p>
+        Zahrada, která neruší, ale ladí. Moderní zahrada pro každodenní život
+        bez zbytečností.
+      </p>
+      <p>
+        Prostor navržený tak, aby nenásilně doplnil architekturu domu a zároveň
+        poskytoval prostor pro odpočinek, soukromí a vizuální ticho.
+      </p>
+
+      <h3>Hlavní rysy:</h3>
+      <ul>
+        <li>geometrické členění, omezená paleta materiálů</li>
+        <li>okrasné trávy, stálezelené keře, solitérní dřevina</li>
+        <li>terasa z dřeva a betonu, decentní osvětlení, minimum dekorací</li>
+        <li>Méně prvků. Větší důraz na detail.</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Zahrada, která roste s rodinou.</h2>
+      <p>Prostor, kde se potkává funkčnost, estetika a radost z pohybu.</p>
+
+      <p>
+        Tato zahrada byla navržena jako bezpečné a inspirativní prostředí pro
+        děti, aniž by ztratila svou vizuální hodnotu a klidný charakter.
+        Propojuje zónu pro hru, relaxaci i společná setkání – každá část má svůj
+        účel, ale celek působí harmonicky a přirozeně.
+      </p>
+      <h3>Co zahrada nabízí:</h3>
+      <p>
+        Bezpečí, funkčnost, přírodní materiály. Zahrada, která slouží celé
+        rodině - v každém věku a v každém ročním období.
+      </p>
+
+      <ul>
+        <li>
+          Dětské hřiště s prolézačkou, pískovištěm a houpačkami, zasazené do
+          zeleně
+        </li>
+        <li>Travnatá plocha pro volnou hru nebo piknik</li>
+        <li>Rodinná terasa s posezením a výhledem na dětskou zónu</li>
+        <li>Stíněná část zahrady pro letní dny, možnost doplnění o bazének</li>
+      </ul>
+    </div> -->
+
+
+
+
+<div class="project_list">
+  <img src="images/architektka.jpg" alt="" onclick="openModal('myModal')">
+  <img src="images/holka.jpg" alt="" onclick="openModal('myModal2')">
+  <img src="images/kluk.jpg" alt="" onclick="openModal('myModal3')">
+
+
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal" onclick="returnFromModal(event)">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img src="images/holka.jpg" alt="" >
+    <img src="images/kluk.jpg" alt="" >
+  </div>
+
+</div>
+
+<!-- The Modal -->
+<div id="myModal2" class="modal" onclick="returnFromModal(event)">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img src="images/deda.jpg" alt="" >
+    <img src="images/babi.jpg" alt="" >
+  </div>
+
+</div>
+
+
+<div id="myModal3" class="modal" onclick="returnFromModal(event)">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal()">&times;</span>
+ 
+    <div class="pictures">
+      <!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
+    </div>
+    <div class="miniatures">
+      <img src="images/deda.jpg" alt="" onclick="myFunction(this);" >
+      <img src="images/kluk.jpg" alt="" onclick="myFunction(this);" >
+    </div>
+    <div class="gallery-content">
+      <h2>Zahrada, která roste s rodinou.</h2>
+      <p>Prostor, kde se potkává funkčnost, estetika a radost z pohybu.</p>
+
+      <p>
+        Tato zahrada byla navržena jako bezpečné a inspirativní prostředí pro
+        děti, aniž by ztratila svou vizuální hodnotu a klidný charakter.
+        Propojuje zónu pro hru, relaxaci i společná setkání - každá část má svůj
+        účel, ale celek působí harmonicky a přirozeně.
+      </p>
+      <h3>Co zahrada nabízí:</h3>
+      <p>
+        Bezpečí, funkčnost, přírodní materiály. Zahrada, která slouží celé
+        rodině - v každém věku a v každém ročním období.
+      </p>
+
+      <ul>
+        <li>
+          Dětské hřiště s prolézačkou, pískovištěm a houpačkami, zasazené do
+          zeleně
+        </li>
+        <li>Travnatá plocha pro volnou hru nebo piknik</li>
+        <li>Rodinná terasa s posezením a výhledem na dětskou zónu</li>
+        <li>Stíněná část zahrady pro letní dny, možnost doplnění o bazének</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<!-- <div class="gallery">
+<img src="images/architektka.jpg" alt=""  onclick="myFunction(this);">
+<img src="images/architektka.jpg" alt=""  onclick="myFunction(this);">
+<img src="images/architektka.jpg" alt=""  onclick="myFunction(this);">
+
+/* The expanding image container -->
+
+<!-- <div class="container">
+  Close the image 
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+   Expanded image 
+  <img id="expandedImg" style="width:10%">
+
+  Image text 
+  <div id="imgtext">ahoj</div>
+</div> 
+</div> -->
+
+
+
+
+
+
+  </body>
+</html>

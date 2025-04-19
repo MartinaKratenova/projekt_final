@@ -1,0 +1,105 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: yellow;
+  /* background-color: #3d492c; */
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #915A5B;
+  padding: 0 0 0 200px;
+}
+.logo {
+  width: 50px;
+  margin: 10px 0;
+}
+.web-name{
+  padding: 0 10px;
+}
+.name{
+  display: flex;
+  align-items: center;
+  color: #fef7ff;
+}
+
+.menu {
+  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+
+}
+.menu li a {
+  text-decoration: none;
+  padding: 5px 15px;
+  display: block;
+  text-transform: uppercase;
+  color:#fef7ff;
+  font-weight: bold;
+}
+
+footer {
+  margin: 0;
+  padding: 20px 0 20px 0;
+
+  background-color: #3d492c;
+  font-size: 0.8rem;
+  flex-basis: 10%;
+  text-align: center;
+  color: #fef7ff;
+}
+.page-contact {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+
+}
+
+.foto-me {
+  margin: 20px;
+  width: 250px;
+
+  border-radius: 50%;
+}
+
+.me {
+  padding: 50px 200px;
+  display: flex;
+  flex-direction: row;
+  background-color: #b1c399;
+  flex-grow: 1;
+  flex-basis: 50%;
+}
+.about-me {
+  padding: 0 60px 0 0;
+}
+
+.contact {
+  padding: 30px 200px;
+  background-color: #fef7ff;
+  flex-grow: 1;
+  flex-basis: 50%;
+}
