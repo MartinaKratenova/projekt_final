@@ -7,33 +7,15 @@
     <link rel="stylesheet" href="style_modal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="my_scripts.js"></script>
+    <script src="portfolioScript.js"></script>
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Portfolio</title>
   </head>
   <body>
-    <!-- <h1>Naše Portfolio</h1>
-    <div>
-      <h2>Zahrada ve stylu Provence</h2>
-      <p>Voňavá oáza klidu inspirovaná jižní Francií</p>
-      <p>
-        Na této terase vznikl prostor, kde se snoubí elegance s přírodní
-        jednoduchostí. Dominantní levandule, kamenná dlažba, rustikální nábytek
-        a pergola porostlá zelení vytvářejí ideální zázemí pro odpočinek i
-        společná letní posezení. Zahrada plynule navazuje na obytný prostor domu
-        a nabízí celoroční krásu i praktické využití.
-      </p>
-      <h3>Hlavní prvky:</h3>
-      <ul>
-        <li>Terasa z přírodního kamene</li>
-        <li>Pergola s popínavými rostlinami</li>
-        <li>Bohaté výsadby levandule a středomořských bylin</li>
-        <li>
-          Dekorace v provensálském duchu (keramika, kov, patinované dřevo)
-        </li>
-      </ul>
-    </div>
+    <h1>Naše Portfolio</h1>
+    
     <div>
       <h2>Minimalistická zahrada pro moderní bydlení</h2>
       <p>Čisté linie. Jednoduchost. Klid.</p>
@@ -80,14 +62,55 @@
         <li>Rodinná terasa s posezením a výhledem na dětskou zónu</li>
         <li>Stíněná část zahrady pro letní dny, možnost doplnění o bazének</li>
       </ul>
-    </div> -->
+      <div class="project_list">
+        <img src="images/architektka.jpg" alt="" onclick="openMoreImages('div1')">
+        <div class="hidden-images" id="div1">
+      
+        <div class="small-images" >
+          <img src="images/holka.jpg" alt="" id="holka-jpg" onclick="openModal('myModal')" />
+          <img src="images/kluk.jpg" alt="" >
+          <img src="images/kluk.jpg" alt="" >
+          <span class="close" onclick="closeMoreImages('div1')">&times;</span>
+        </div>
+        </div>
 
+    </div>
 
+    <div>
+      <h2>Zahrada ve stylu Provence</h2>
+      <p>Voňavá oáza klidu inspirovaná jižní Francií</p>
+      <p>
+        Na této terase vznikl prostor, kde se snoubí elegance s přírodní
+        jednoduchostí. Dominantní levandule, kamenná dlažba, rustikální nábytek
+        a pergola porostlá zelení vytvářejí ideální zázemí pro odpočinek i
+        společná letní posezení. Zahrada plynule navazuje na obytný prostor domu
+        a nabízí celoroční krásu i praktické využití.
+      </p>
+      <h3>Hlavní prvky:</h3>
+      <ul>
+        <li>Terasa z přírodního kamene</li>
+        <li>Pergola s popínavými rostlinami</li>
+        <li>Bohaté výsadby levandule a středomořských bylin</li>
+        <li>
+          Dekorace v provensálském duchu (keramika, kov, patinované dřevo)
+        </li>
+      </ul>
+    </div>
 
 
 <div class="project_list">
-  <img src="images/architektka.jpg" alt="" onclick="openModal('myModal')">
+  <img src="images/architektka.jpg" alt="" onclick="openMoreImages('div1')">
+  <div class="hidden-images" id="div1">
+
+  <div class="small-images" >
+    <img src="images/holka.jpg" alt="" id="holka-jpg" onclick="openModal('myModal')" />
+    <img src="images/kluk.jpg" alt="" >
+    <img src="images/kluk.jpg" alt="" >
+    <span class="close" onclick="closeMoreImages('div1')">&times;</span>
+  </div>
+  </div>
   <img src="images/holka.jpg" alt="" onclick="openModal('myModal2')">
+
   <img src="images/kluk.jpg" alt="" onclick="openModal('myModal3')">
 
 
@@ -100,7 +123,8 @@
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
     <img src="images/holka.jpg" alt="" >
-    <img src="images/kluk.jpg" alt="" >
+
+
   </div>
 
 </div>
@@ -122,19 +146,22 @@
 
   <!-- Modal content -->
   <div class="modal-content">
-
     <span class="close" onclick="closeModal()">&times;</span>
- 
-    <div class="pictures">
-      <!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
-      <img id="expandedImg" style="width:100%">
+
+    <div class="left">
+    <div class="picture">
+
+      <img id="expandedImg" >
       <div id="imgtext"></div>
     </div>
+
     <div class="miniatures">
-      <img src="images/deda.jpg" alt="" onclick="myFunction(this);" >
-      <img src="images/kluk.jpg" alt="" onclick="myFunction(this);" >
+      <div id="imagegrid" on="addImages()"></div>
+      <!-- <img src="images/deda.jpg" alt="" onclick="myFunction(this);" >
+      <img src="images/kluk.jpg" alt="" onclick="myFunction(this);" > -->
     </div>
-    <div class="gallery-content">
+  </div>
+    <div class="right">
       <h2>Zahrada, která roste s rodinou.</h2>
       <p>Prostor, kde se potkává funkčnost, estetika a radost z pohybu.</p>
 
@@ -163,10 +190,6 @@
   </div>
 
 </div>
-
-
-
-
 
 
 <!-- <div class="gallery">

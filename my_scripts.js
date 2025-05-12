@@ -13,6 +13,7 @@
 
 
 var modal;
+var obal;
 
 function openModal(modalId) {
     // Get the modal
@@ -33,6 +34,8 @@ function closeModal() {
     modal.style.display = "none";
 }
 
+
+
 function myFunction(imgs) {
     var expandImg = document.getElementById("expandedImg");
     var imgText = document.getElementById("imgtext");
@@ -40,3 +43,16 @@ function myFunction(imgs) {
     imgText.innerHTML = imgs.alt;
     expandImg.parentElement.style.display = "block";
   }
+
+
+  function openMoreImages(obal){
+    obal = document.getElementById(obal);
+obal.style.display = "inline-block";
+  }
+
+  function closeMoreImages(obal){
+    obal = document.getElementById(obal);
+obal.style.display = "none";
+  }
+
+
