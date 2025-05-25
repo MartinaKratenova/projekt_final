@@ -1,141 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="styleGallery.css" />
-    <title>Document</title>
-</head>
-<body>
-    <h1>Portfolio</h1>
+    <link rel="stylesheet" href="style.css" />
 
-    <div class="rodinna-zahrada">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-      <h2>Japoonská zahrada</h2>
-<!-- Slideshow container -->
-<div class="slideshow-container">
+    <title>Portofolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu-picture"></div>
+      <div class="menu">
+        <div class="name">
+          <img class="logo" src="images/logo_2.svg" alt="" />
+          <!-- <div class="web-name">Zahradní architektka <br> Květa Kvítková</div> -->
+        </div>
 
-
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides active">
-
-        <img  src="images/japan1.png" class="portfolio-picture" />
-  
+        <ul class="menu-items">
+          <li><a href="index.html">Domů</a></li>
+          <li><a href="services.html">Služby</a></li>
+          <li><a href="gallery.html">Portfolio</a></li>
+          <li><a href="blog.html">Inspirace</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
       </div>
-    <div class="mySlides">
+    </header>
+    <section class="page-header section odd-section">
+      <div class="container">
+        <h1 class="page-headline">Portfolio</h1>
+        <p>
+          Každá zahrada je jedinečný příběh. Příběh místa, lidí a přírody. V mém
+          portfoliu naleznete výběr projektů, které vznikly v úzkém dialogu s
+          klienty a okolním prostředím – od dětských lesních školek přes městské
+          dvorky až po rozkvetlé venkovské zahrady ve stylu Provence.
+          Specializuji se na návrhy, které spojují estetiku s funkčností a
+          respektují přirozený rytmus krajiny.
+        </p>
+        <p>
+          Věřím, že zahrada má být nejen krásná na pohled, ale i příjemná na
+          život – prostor, kde se dobře dýchá, kde čas plyne pomaleji a kde se
+          člověk rád zastaví. Prohlédněte si ukázky mé práce. Možná v nich
+          najdete inspiraci pro svou vlastní zahradu.
+        </p>
+      </div>
+    </section>
+    <section class="japanese-garden section even-section">
+      <div class="container">
+        <h2 class="smaller-headline">Realizace japonské zahrady</h2>
+        <p>
+          Japonská zahrada není pouze vizuální kompozicí - je filozofií. Cílem
+          bylo vytvořit místo, které bude působit jako útočiště od každodenního
+          shonu a zároveň bude odrážet respekt k přírodě i času. Návrh jsme
+          založili na principech asymetrie, jednoduchosti a symboliky.
+        </p>
 
-      <img src="images/japan2.png" class="portfolio-picture" />
-
-    </div>
-  
-    <div class="mySlides">
-
-      <img src="images/japan3.png" class="portfolio-picture" />
-
-    </div>
-  
-    <div class="mySlides">
-
-      <img src="images/japan4.png" class="portfolio-picture" />
-
-    </div>
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1,'mySlides')">&#10094;</a>
-    <a class="next" onclick="plusSlides(1,'mySlides')">&#10095;</a>
-  </div>
-
-    <h2>Zahrada, která roste s rodinou.</h2>
-    <p>Prostor, kde se potkává funkčnost, estetika a radost z pohybu.</p>
-
-    <p>
-      Tato zahrada byla navržena jako bezpečné a inspirativní prostředí pro
-      děti, aniž by ztratila svou vizuální hodnotu a klidný charakter.
-      Propojuje zónu pro hru, relaxaci i společná setkání – každá část má svůj
-      účel, ale celek působí harmonicky a přirozeně.
-    </p>
-    <h3>Co zahrada nabízí:</h3>
-    <p>
-      Bezpečí, funkčnost, přírodní materiály. Zahrada, která slouží celé
-      rodině - v každém věku a v každém ročním období.
-    </p>
-
-    <ul>
-      <li>
-        Dětské hřiště s prolézačkou, pískovištěm a houpačkami, zasazené do
-        zeleně
-      </li>
-      <li>Travnatá plocha pro volnou hru nebo piknik</li>
-      <li>Rodinná terasa s posezením a výhledem na dětskou zónu</li>
-      <li>Stíněná část zahrady pro letní dny, možnost doplnění o bazének</li>
-    </ul>
-  
-  <p>konec</p>
-
-</div>
-
-<div class="rodinna-zahrada">
-  <h2>Rodinná zahrada</h2>
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides1">
-    
-            <img  src="images/detska_puvodni.png" class="portfolio-picture" />
-      
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides active">
+            <img src="images/japan1.png" class="portfolio-picture" />
           </div>
-        <div class="mySlides1">
-    
-          <img src="images/detska.png" class="portfolio-picture" />
-    
+          <div class="mySlides">
+            <img src="images/japan2a.png" class="portfolio-picture" />
+          </div>
+          <div class="mySlides">
+            <img src="images/japan4.png" class="portfolio-picture" />
+          </div>
+
+          <div class="mySlides">
+            <img src="images/japan3.png" class="portfolio-picture" />
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1,'mySlides')">&#10094;</a>
+          <a class="next" onclick="plusSlides(1,'mySlides')">&#10095;</a>
         </div>
-      
-        <div class="mySlides1 active">
-    
-          <img src="images/detska1.png" class="portfolio-picture" />
-    
-        </div>
-      
-        <div class="mySlides1">
-    
-          <img src="images/detska2.png" class="portfolio-picture" />
-    
-        </div>
-      
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1, 'mySlides1')">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 'mySlides1')">&#10095;</a>
+
+        Klíčové prvky zahrady tvoří:
+        <ul class="list">
+          <li class="list-item-checked">Suché koryto (karesansui) s říčními oblázky</li>
+          <li class="list-item-checked">Tvarované borovice a javory (Acer palmatum)</li>
+          <li class="list-item-checked">Plochy s mechem a nízkými keři</li>
+          <li class="list-item-checked">Kamenný mostek a lucerny (tōrō)</li>
+          <li class="list-item-checked">Dřevěné molo s výhledem na centrální kompozici</li>
+        </ul>
       </div>
-    
-        <h2>Zahrada, která roste s rodinou.</h2>
+    </section>
+
+    <section class="family-garden section odd-section">
+      <div class="container">
+        <h2 class="smaller-headline">Zahrada, která roste s rodinou</h2>
         <p>Prostor, kde se potkává funkčnost, estetika a radost z pohybu.</p>
-    
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides1">
+            <img src="images/detska_puvodni.png" class="portfolio-picture" />
+          </div>
+          <div class="mySlides1">
+            <img src="images/detska.png" class="portfolio-picture" />
+          </div>
+
+          <div class="mySlides1 active">
+            <img src="images/detska1.png" class="portfolio-picture" />
+          </div>
+
+          <div class="mySlides1">
+            <img src="images/detska2.png" class="portfolio-picture" />
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1, 'mySlides1')">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 'mySlides1')">&#10095;</a>
+        </div>
+
         <p>
           Tato zahrada byla navržena jako bezpečné a inspirativní prostředí pro
           děti, aniž by ztratila svou vizuální hodnotu a klidný charakter.
-          Propojuje zónu pro hru, relaxaci i společná setkání – každá část má svůj
-          účel, ale celek působí harmonicky a přirozeně.
+          Propojuje zónu pro hru, relaxaci i společná setkání – každá část má
+          svůj účel, ale celek působí harmonicky a přirozeně.
         </p>
         <h3>Co zahrada nabízí:</h3>
         <p>
           Bezpečí, funkčnost, přírodní materiály. Zahrada, která slouží celé
           rodině - v každém věku a v každém ročním období.
         </p>
-    
-        <ul>
-          <li>
-            Dětské hřiště s prolézačkou, pískovištěm a houpačkami, zasazené do
+
+        <ul class="list">
+          <li class="list-item-checked">Dětské hřiště s prolézačkou, pískovištěm a houpačkami, zasazené do
             zeleně
           </li>
-          <li>Travnatá plocha pro volnou hru nebo piknik</li>
-          <li>Rodinná terasa s posezením a výhledem na dětskou zónu</li>
-          <li>Stíněná část zahrady pro letní dny, možnost doplnění o bazének</li>
+          <li class="list-item-checked">Travnatá plocha pro volnou hru nebo piknik
+          </li>
+          <li class="list-item-checked">Rodinná terasa s posezením a výhledem na dětskou zónu
+          </li>
+          <li class="list-item-checked">Stíněná část zahrady pro letní dny, možnost doplnění o bazének
+          </li>
         </ul>
-      
-      <p>konec</p>
-    
-    </div>
-  <script src="portfolioScript.js"></script>
-</body>
+      </div>
+    </section>
+
+    <section class="provence-styled-garden section even-section">
+      <div class="container">
+        <h2 class="smaller-headline">Zahrada ve stylu Provence</h2>
+        <p>Voňavá oáza klidu inspirovaná jižní Francií</p>
+        <p>
+          Na této terase vznikl prostor, kde se snoubí elegance s přírodní
+          jednoduchostí. Dominantní levandule, kamenná dlažba, rustikální
+          nábytek a pergola porostlá zelení vytvářejí ideální zázemí pro
+          odpočinek i společná letní posezení. Zahrada plynule navazuje na
+          obytný prostor domu a nabízí celoroční krásu i praktické využití.
+        </p>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides2 active">
+            <img src="images/provence1.jpg" class="portfolio-picture" />
+          </div>
+
+          <div class="mySlides2">
+            <img src="images/provence2.jpg" class="portfolio-picture" />
+          </div>
+
+          <div class="mySlides2">
+            <img src="images/provence3.jpg" class="portfolio-picture" />
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1, 'mySlides2')">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 'mySlides2')">&#10095;</a>
+        </div>
+
+        <h3>Hlavní prvky:</h3>
+        <ul class="list">
+          <li class="list-item-checked">Terasa z přírodního kamene</li>
+          <li class="list-item-checked">Pergola s popínavými rostlinami</li>
+          <li class="list-item-checked">Bohaté výsadby levandule a středomořských bylin
+          </li>
+          <li class="list-item-checked">Dekorace v provensálském duchu (keramika, kov, patinované dřevo)
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="portfolioScript.js"></script>
+  </body>
 </html>

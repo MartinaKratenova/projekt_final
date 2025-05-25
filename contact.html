@@ -14,9 +14,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="menu-picture">
-        
-      </div>
+      <div class="menu-picture"></div>
       <div class="menu">
         <div class="name">
           <img class="logo" src="images/logo_2.svg" alt="" />
@@ -24,113 +22,119 @@
         </div>
 
         <ul class="menu-items">
-          <li><a href="#">Domů</a></li>
-          <li><a href="#">Služby</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Inspirace</a></li>
-          <li><a href="#">Kontakt</a></li>
+          <li><a href="index.html">Domů</a></li>
+          <li><a href="services.html">Služby</a></li>
+          <li><a href="gallery.html">Portfolio</a></li>
+          <li><a href="blog.html">Inspirace</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
         </ul>
       </div>
     </header>
 
     <div class="page-contact">
       <!--O mne-->
-      <section class="about-me">
+      <section class="about-me-section section odd-section">
         <div class="container">
-          <div class="photo-architect">
-            <img
-              class="photo-me"
-              src="images/architektka.jpg"
-              alt="Foto architektky"
-            />
-          </div>
+          <div class="about-me-info">
+            <div class="photo-architect">
+              <img
+                class="photo-me"
+                src="images/architektka.jpg"
+                alt="Foto architektky"
+              />
+            </div>
 
-          <div class="about-me">
-            <h2>O mně</h2>
-            <p>
-              Jsem certifikovaný zahradní architekt s praxí v navrhování a
-              realizaci zahrad. Zaměřuji se na komplexní řešení od návrhu po
-              realizaci s důrazem na kvalitu a individuální přístup. Nabízím
-              širokou škálu služeb, včetně návrhu zahrad, vizualizací, realizace
-              a údržby
-            </p>
+            <div class="about-me-text">
+              <h1 class="page-headline">O mně</h1>
+              <p>
+                Jsem certifikovaný zahradní architekt s praxí v navrhování a
+                realizaci zahrad. Zaměřuji se na komplexní řešení od návrhu po
+                realizaci s důrazem na kvalitu a individuální přístup. Nabízím
+                širokou škálu služeb, včetně návrhu zahrad, vizualizací,
+                realizace a údržby
+              </p>
 
-            <p>
-              Inspiraci čerpám z přírody i moderních trendů v zahradním designu.
-              Nebojím se experimentovat a hledat neotřelá řešení, která vaši
-              zahradu promění v unikátní prostor. Mým cílem je vytvářet zahrady,
-              které jsou nejen krásné, ale i udržitelné a ohleduplné k životnímu
-              prostředí.
-            </p>
-            <p>
-              Zahrady pro mě nejsou jen prací, ale vášní. Věřím, že každý
-              prostor má potenciál stát se oázou klidu a krásy.
-            </p>
-            <p>
-              S pečlivostí a citem pro detail navrhuji zahrady, které odrážejí
-              osobnost mých klientů a zároveň respektují přírodní zákonitosti.
-              Mým cílem je vytvářet harmonické prostory, které přinášejí radost
-              a pohodu.
-            </p>
+              <p>
+                Inspiraci čerpám z přírody i moderních trendů v zahradním
+                designu. Nebojím se experimentovat a hledat neotřelá řešení,
+                která vaši zahradu promění v unikátní prostor.
+              </p>
+              <p>
+                Zahrady pro mě nejsou jen prací, ale vášní. Věřím, že každý
+                prostor má potenciál stát se oázou klidu a krásy. Mým cílem je
+                vytvářet zahrady, které jsou nejen krásné, ale i udržitelné a
+                ohleduplné k životnímu prostředí.
+              </p>
+              <!-- <p>
+                S pečlivostí a citem pro detail navrhuji zahrady, které odrážejí
+                osobnost mých klientů a zároveň respektují přírodní zákonitosti.
+                Mým cílem je vytvářet harmonické prostory, které přinášejí
+                radost a pohodu.
+              </p> -->
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact section even-section">
         <div class="container">
-          <h3>Kontakt</h3>
-          <p>
-            Květa Kvítková <br />
-            Luční 123 <br />
-            Městečko u Louky <br />
-            123 45 <br />
-          </p>
-          <p>IČ: 12345678</p>
-          <p>
-            E-mail: <a href="mailto:kveta@email.cz">kveta@email.cz</a> <br />
-            Mobil: +420 987 654 321 <br />
-          </p>
+          <div class="contact-info">
+            <h2>Kontakt</h2>
+            <p class="contact-info-text">
+              Květa Kvítková <br />
+              Luční 123 <br />
+              Městečko u Louky <br />
+              123 45 <br />
+            </p>
+            <p class="contact-info-text">IČ: 12345678</p>
+           <p class="contact-info-text">
+              E-mail: <a href="mailto:kveta.kvitkova@czechitas.cz">kveta.kvitkova@czechitas.cz</a> <br />
+              Mobil: +420 987 654 321 <br />
+        </p>
+          </div>
         </div>
       </section>
 
-      <section class="contact-form">
+      <section class="contact-form section odd-section">
         <div class="container">
-          <h2>Kontaktní formulář</h2>
-          <form action="https://submit-form.com/ERFVByt1a">
-            <input
-              type="hidden"
-              name="_redirect"
-              value=" https://formspark.io/"
-            />
+          <div class="form">
+            <h2>Kontaktní formulář</h2>
+            <form action="https://submit-form.com/ERFVByt1a">
+              <input
+                type="hidden"
+                name="_redirect"
+                value=" https://formspark.io/"
+              />
 
-            <div class="form-field">
-              <label for="jmeno">Jméno a příjmení*</label>
-              <input type="text" name="name-surname" required />
-            </div>
+              <div class="form-field">
+                <label for="jmeno">Jméno a příjmení*</label>
+                <input type="text" name="name-surname" required />
+              </div>
 
-            <div class="form-field">
-              <label for="email">E-mail *</label>
-              <input type="email" name="email" required />
-            </div>
+              <div class="form-field">
+                <label for="email">E-mail *</label>
+                <input type="email" name="email" required />
+              </div>
 
-            <div class="form-field">
-              <label for="subject">Předmět *</label>
-              <input type="text" name="subject" required />
-            </div>
+              <div class="form-field">
+                <label for="subject">Předmět *</label>
+                <input type="text" name="subject" required />
+              </div>
 
-            <div class="form-field">
-              <label for="info">S čím Vám pomůžeme? *</label>
-              <textarea
-                name="info"
-                id="info"
-                rows="4"
-                cols="50"
-                required
-              ></textarea>
-            </div>
+              <div class="form-field">
+                <label for="info">S čím Vám pomůžeme? *</label>
+                <textarea
+                  name="info"
+                  id="info"
+                  rows="4"
+                  cols="50"
+                  required
+                ></textarea>
+              </div>
 
-            <button type="submit" class="button">Odeslat</button>
-          </form>
+              <button type="submit" class="button">Odeslat</button>
+            </form>
+          </div>
         </div>
       </section>
 

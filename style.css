@@ -1,3 +1,9 @@
+:root {
+  --primary: #fef7ff;
+  --secondary: white;
+  --light-font-c: #fef7ff;
+  --spacer:30px;
+}
 *,
 :after,
 :before {
@@ -17,11 +23,34 @@ div {
 body {
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
-  background-color: white;
+  background-color: var(--secondary);
 }
 .container {
   max-width: 80%;
   margin: 0 auto;
+}
+
+.page-headline {
+  font-size: 3em;
+}
+h2 {
+  font-size: 1.5em;
+}
+
+.section {
+  padding: calc(var(--spacer) * 1.5) 0;
+  margin: 0;
+}
+
+.odd-section {
+  background-color: var(--secondary);
+}
+.even-section {
+  background-color: var(--primary);
+}
+
+.smaller-headline {
+  margin: 20px 0;
 }
 
 /*Menu*/
@@ -99,48 +128,48 @@ footer {
   background-color: #2e1e35;
   font-size: 0.8rem;
   text-align: center;
-  color: #fef7ff;
+  color: var(--light-font-c);
 }
 
 /*Contact page*/
-.page-contact {
-  margin: 0;
-}
 
-section.about-me {
+.about-me-info {
   display: flex;
-  flex-direction: row;
-  background-color: white;
+  flex-direction: column;
   gap: 60px;
 }
 .photo-me {
   margin: 20px auto;
-  width: 250px;
+  width: 100%;
   border-radius: 50%;
   box-shadow: 2px 2px 2px silver;
 }
 .photo-architect {
   justify-self: center;
   align-self: center;
+  flex: 0 0 calc(100% / 3);
+  min-width: 250px;
+  max-width: 300px;
+}
+.contact-info {
+  justify-items: left;
+  justify-self: center;
+  width: 400px;
+}
+.contact-info-text {
+  text-align: left;
 }
 
-section.contact {
-  background-color: #fef7ff;
-  padding: 60px 0;
-  margin: 0;
-}
-
-section.contact-form,
-section.contact, 
-section.about-me  {
-  padding: 60px 0;
-  margin: 0;
-}
-
+/*form*/
 form {
   width: 100%;
   max-width: 400px;
 }
+
+.form {
+  justify-items: center;
+}
+
 .form-field label {
   display: block;
   font-size: 14px;
@@ -180,18 +209,6 @@ form {
 }
 
 /*Our services page*/
-section.price-list,
-section.our-services {
-  padding: 60px 0;
-  margin: 0;
-}
-.price-list {
-  background-color: #fef7ff;
-}
-
-section.our-services {
-  background-color: white;
-}
 
 /*Price list table*/
 table.price-list-table {
@@ -209,4 +226,55 @@ table.price-list-table {
   text-align: left;
   border-bottom: 2px solid #282425;
   padding: 10px 5px;
+}
+
+/*Thank you page*/
+.thank-you-text {
+  align-self: center;
+  justify-self: center;
+  min-height: 50vh;
+  justify-content: center;
+  padding: 30px;
+}
+
+/*Blog pages*/
+
+.blog-link {
+  text-decoration: none;
+  color: #282425;
+}
+
+.list-item-checked {
+  list-style-type: none;
+}
+.list-item-checked::before {
+  content: "";
+  display: inline-block;
+  height: 1em;
+  width: 2em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(images/check_icon.svg);
+}
+
+@media screen and (min-width: 1100px) {
+  .about-me-info {
+    flex-direction: row;
+  }
+  .photo-architect {
+    order: 2;
+    max-width: 400px;
+    position: relative;
+  }
+  .photo-me {
+    position: absolute;
+    bottom: -300px;
+  }
+  .about-me-text {
+    order: 1;
+  }
+  .contact-info {
+    justify-self: left;
+  }
 }
