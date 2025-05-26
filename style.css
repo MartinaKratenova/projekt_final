@@ -2,6 +2,7 @@
   --primary: #fef7ff;
   --secondary: white;
   --light-font-c: #fef7ff;
+  --menu-bg-color:#865a91;
   --spacer:30px;
 }
 *,
@@ -50,9 +51,28 @@ h2 {
 }
 
 .smaller-headline {
-  margin: 20px 0;
+  margin: calc(0.8 * var(--spacer)) 0;
 }
 
+/*breadcrubms*/
+.breadcrumbs-list{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.breadcrumbs-item::before{
+  content: "";
+  display: inline-block;
+  height: 1.5em;
+  width: 2em;
+  margin-bottom: -5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(images/chevron_fw.svg);
+
+}
 /*Menu*/
 
 .header {
