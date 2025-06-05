@@ -1,9 +1,18 @@
 :root {
-  --primary: #fef7ff;
+  --primary: #f0e4ff;
+  /* --primary: #fef7ff; */
+
   --secondary: white;
   --light-font-c: #fef7ff;
-  --menu-bg-color:#865a91;
-  --spacer:30px;
+  --menu-bg-color: #865a91;
+  --menu-bg-dark-color: #623b6b;
+  --button-darker-c: #71447c;
+  --dark-c: #2e1e35;
+  --spacer: 30px;
+  --big-font: 2em;
+  --small-font: 1em;
+  --bigger-font: 3em;
+  --smaller-font: 1.5em;
 }
 *,
 :after,
@@ -31,11 +40,13 @@ body {
   margin: 0 auto;
 }
 
-.page-headline {
-  font-size: 3em;
+.big-headline {
+  margin: calc(0.8 * var(--spacer)) 0;
+  font-size: var(--big-font);
 }
-h2 {
-  font-size: 1.5em;
+.smaller-headline {
+  margin: calc(0.6 * var(--spacer)) 0;
+  font-size: var(--small-font);
 }
 
 .section {
@@ -48,20 +59,21 @@ h2 {
 }
 .even-section {
   background-color: var(--primary);
-}
-
-.smaller-headline {
-  margin: calc(0.8 * var(--spacer)) 0;
+  background-image: linear-gradient(
+    to top right,
+    var(--primary) 75%,
+    white 95%
+  );
 }
 
 /*breadcrubms*/
-.breadcrumbs-list{
+.breadcrumbs-list {
   display: flex;
   flex-direction: row;
   list-style: none;
 }
 
-.breadcrumbs-item::before{
+.breadcrumbs-item::before {
   content: "";
   display: inline-block;
   height: 1.5em;
@@ -70,19 +82,18 @@ h2 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(images/chevron_fw.svg);
-
+  background-image: url(/images/chevron_fw.svg);
 }
 /*Menu*/
 
 .header {
   min-height: 80px;
-  background-color: #865a91;
+  background-color: var(--menu-bg-color);
 }
 .menu-picture {
   width: 100%;
   background-color: #282425;
-  background-image: url(images/menu-bgr-img.jpeg);
+  background-image: url(/images/menu-bgr-img.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 200px;
@@ -102,7 +113,8 @@ h2 {
   position: relative;
 }
 .menu {
-  background-color: #865a91;
+  background-color: var(--menu-bg-color);
+  background-image: linear-gradient(to right, var(--menu-bg-dark-color), var(--menu-bg-color));
   min-height: 50px;
   width: 100%;
   display: flex;
@@ -123,29 +135,29 @@ h2 {
 }
 .menu li a {
   text-decoration: none;
-  padding: 15px 20px;
+  padding: 14px 20px;
+  min-height: 50px;
   display: block;
   text-transform: uppercase;
-  color: #fef7ff;
+  color: var(--light-font-c);
   font-weight: bold;
 }
 
-.menu li a:hover {
-  background-color: bisque;
-  color: black;
-}
-.menu li:hover {
-  background-color: bisque;
+.menu li a:hover,
+.menu li a:active,
+.menu li a:focus {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
   color: black;
 }
 
 /*Footer*/
 
-footer {
+.footer {
   margin: 0;
   padding: 20px 0 20px 0;
   width: 100%;
-  background-color: #2e1e35;
+  background-color: var(--dark-c);
   font-size: 0.8rem;
   text-align: center;
   color: var(--light-font-c);
@@ -204,7 +216,7 @@ form {
 .form-field textarea,
 .form-field select {
   width: 100%;
-  border-color: #865a91;
+  border-color: var(--menu-bg-color);
   background-color: #cacaca;
   color: rgb(66, 66, 66);
   padding: 5px;
@@ -212,7 +224,7 @@ form {
 }
 
 .button {
-  background-color: #865a91;
+  background-color: var(--menu-bg-color);
   padding: 10px 30px;
   border-radius: 5px;
   border: 0;
@@ -221,7 +233,7 @@ form {
 }
 
 .button:hover {
-  background-color: #71447c;
+  background-color: var(--button-darker-c);
   padding: 10px 30px;
   border-radius: 5px;
   border: 0;
@@ -252,9 +264,10 @@ table.price-list-table {
 .thank-you-text {
   align-self: center;
   justify-self: center;
-  min-height: 50vh;
+  font-size: xx-large;
   justify-content: center;
   padding: 30px;
+  text-align: center;
 }
 
 /*Blog pages*/
@@ -275,10 +288,36 @@ table.price-list-table {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(images/check_icon.svg);
+  background-image: url(/images/check_icon.svg);
 }
 
-@media screen and (min-width: 1100px) {
+.blog-picture {
+  width: 500px;
+}
+
+.float-right {
+  float: right;
+  border-radius: 0 20px 20px 20px;
+  margin-top: var(--spacer);
+  margin-bottom: var(--spacer);
+  margin-right: 0;
+  margin-left: var(--spacer);
+}
+
+.float-left {
+  float: left;
+  border-radius: 20px 0 20px 20px;
+  margin-top: var(--spacer);
+  margin-bottom: var(--spacer);
+  margin-left: 0;
+  margin-right: var(--spacer);
+}
+
+.border {
+  border: 2px solid var(--dark-c);
+}
+
+@media screen and (min-width: 1000px) {
   .about-me-info {
     flex-direction: row;
   }
@@ -296,5 +335,14 @@ table.price-list-table {
   }
   .contact-info {
     justify-self: left;
+  }
+
+  .big-headline {
+    margin: var(--spacer) 0;
+    font-size: var(--bigger-font);
+  }
+  .smaller-headline {
+    margin: calc(0.8 * var(--spacer)) 0;
+    font-size: var(--smaller-font);
   }
 }

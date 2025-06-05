@@ -8,7 +8,7 @@ body {
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ),
-    url(images/provence1_dark2.jpg);
+    url(/images/provence1_dark2.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,21 +94,27 @@ body {
   color: #fef7ff;
 }
 
+
 .circle-services {
-  background-image: url(images/circle1.jpg);
+  background-image: url(/images/circle1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 90%;
 }
+
+.circle-bigger:hover{
+
+transform: scale(1.1);
+}
 .circle-portfolio {
-  background-image: url(images/circle2.jpg);
+  background-image: url(/images/circle2.jpg);
 }
 .circle-blog {
-  background-image: url(images/circle3.jpg);
+  background-image: url(/images/circle3.jpg);
 }
 .circle-contact {
-  background-image: url(images/circle4.jpg);
+  background-image: url(/images/circle4.jpg);
 }
 img {
   width: 100%;
