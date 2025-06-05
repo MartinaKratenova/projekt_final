@@ -20,6 +20,8 @@
   $hero-font-size-2: 5em;
   $hero-motto-font-size-2: 3em;
 
+  $screen-width: 1000px;
+
   *,
   :after,
   :before {
@@ -51,7 +53,7 @@
     margin: calc(0.8 * $spacer) 0;
     font-size: $big-font;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: $screen-width) {
 
 
       & {
@@ -66,7 +68,7 @@
     margin: calc(0.6 * $spacer) 0;
     font-size: $small-font;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: $screen-width) {
 
 
       & {
@@ -441,7 +443,7 @@
     flex-direction: column;
     gap: 60px;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: $screen-width) {
       & {
         flex-direction: row;
       }
@@ -455,7 +457,7 @@
     border-radius: 50%;
     box-shadow: 2px 6px 8px silver;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: $screen-width) {
 
 
       & {
@@ -473,7 +475,7 @@
     min-width: 250px;
     max-width: 300px;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: $screen-width) {
 
       & {
         order: 2;
@@ -489,7 +491,7 @@
     justify-self: center;
     width: 400px;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: $screen-width) {
 
       & {
         justify-self: left;
@@ -629,7 +631,7 @@
     border: 2px solid $dark-c;
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: $screen-width) {
 
     .about-me-text {
       order: 1;
