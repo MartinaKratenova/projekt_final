@@ -29,10 +29,22 @@ body {
   margin: 24px 0;
   font-size: 2em;
 }
+@media screen and (min-width: 1000px) {
+  .big-headline {
+    margin: 30px 0;
+    font-size: 3em;
+  }
+}
 
 .smaller-headline {
   margin: 18px 0;
   font-size: 1em;
+}
+@media screen and (min-width: 1000px) {
+  .smaller-headline {
+    margin: 24px 0;
+    font-size: 1.5em;
+  }
 }
 
 .section {
@@ -365,7 +377,7 @@ img {
   box-shadow: 2px 6px 8px silver;
 }
 @media screen and (min-width: 1000px) {
-  .photo-me .photo-me {
+  .photo-me {
     position: absolute;
     bottom: -300px;
   }
@@ -390,6 +402,11 @@ img {
   justify-items: left;
   justify-self: center;
   width: 400px;
+}
+@media screen and (min-width: 1000px) {
+  .contact-info {
+    justify-self: left;
+  }
 }
 
 .contact-info-text {
@@ -522,30 +539,7 @@ table.price-list-table {
 }
 
 @media screen and (min-width: 1000px) {
-  .about-me-info {
-    flex-direction: row;
-  }
-  .photo-architect {
-    order: 2;
-    max-width: 400px;
-    position: relative;
-  }
-  .photo-me {
-    position: absolute;
-    bottom: -300px;
-  }
   .about-me-text {
     order: 1;
-  }
-  .contact-info {
-    justify-self: left;
-  }
-  .big-headline {
-    margin: 30px 0;
-    font-size: 3em;
-  }
-  .smaller-headline {
-    margin: 24px 0;
-    font-size: 1.5em;
   }
 }/*# sourceMappingURL=style.css.map */
