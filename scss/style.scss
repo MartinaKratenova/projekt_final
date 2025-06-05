@@ -1,19 +1,19 @@
-:root {
-  --primary: #f0e4ff;
-  /* --primary: #fef7ff; */
+  $primary: #f0e4ff;
+  $secondary: white;
+  
+  $light-font-c: #fef7ff;
+  $menu-bg-color: #865a91;
+  $menu-bg-dark-color: #623b6b;
+  $button-darker-c: #71447c;
+  $dark-c: #2e1e35;
 
-  --secondary: white;
-  --light-font-c: #fef7ff;
-  --menu-bg-color: #865a91;
-  --menu-bg-dark-color: #623b6b;
-  --button-darker-c: #71447c;
-  --dark-c: #2e1e35;
-  --spacer: 30px;
-  --big-font: 2em;
-  --small-font: 1em;
-  --bigger-font: 3em;
-  --smaller-font: 1.5em;
-}
+  $spacer: 30px;
+
+  $big-font: 2em;
+  $small-font: 1em;
+  $bigger-font: 3em;
+  $smaller-font: 1.5em;
+
 *,
 :after,
 :before {
@@ -33,7 +33,7 @@ div {
 body {
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
-  background-color: var(--secondary);
+  background-color: $secondary;
 }
 .container {
   max-width: 80%;
@@ -41,27 +41,27 @@ body {
 }
 
 .big-headline {
-  margin: calc(0.8 * var(--spacer)) 0;
-  font-size: var(--big-font);
+  margin: calc(0.8 * $spacer) 0;
+  font-size: $big-font;
 }
 .smaller-headline {
-  margin: calc(0.6 * var(--spacer)) 0;
-  font-size: var(--small-font);
+  margin: calc(0.6 * $spacer) 0;
+  font-size: $small-font;
 }
 
 .section {
-  padding: calc(var(--spacer) * 1.5) 0;
+  padding: calc($spacer) * 1.5 0;
   margin: 0;
 }
 
 .odd-section {
-  background-color: var(--secondary);
+  background-color: $secondary;
 }
 .even-section {
-  background-color: var(--primary);
+  background-color: $primary;
   background-image: linear-gradient(
     to top right,
-    var(--primary) 75%,
+    $primary 75%,
     white 95%
   );
 }
@@ -89,7 +89,7 @@ body {
 
 .header {
   min-height: 80px;
-  background-color: var(--menu-bg-color);
+  background-color: $menu-bg-color;
 }
 .menu-picture {
   width: 100%;
@@ -114,8 +114,8 @@ body {
   position: relative;
 }
 .menu {
-  background-color: var(--menu-bg-color);
-  background-image: linear-gradient(to right, var(--menu-bg-dark-color), var(--menu-bg-color));
+  background-color: $menu-bg-color;
+  background-image: linear-gradient(to right, $menu-bg-dark-color, $menu-bg-color);
   min-height: 50px;
   width: 100%;
   display: flex;
@@ -140,15 +140,15 @@ body {
   min-height: 50px;
   display: block;
   text-transform: uppercase;
-  color: var(--light-font-c);
+  color: $light-font-c;
   font-weight: bold;
 }
 
 .menu li a:hover,
 .menu li a:active,
 .menu li a:focus {
-  background-color: var(--primary);
-  border: 1px solid var(--primary);
+  background-color: $primary;
+  border: 1px solid $primary;
   color: black;
 }
 
@@ -158,15 +158,15 @@ body {
   margin: 0;
   padding: 20px 0 20px 0;
   width: 100%;
-  background-color: var(--dark-c);
+  background-color: $dark-c;
   font-size: 0.8rem;
   text-align: center;
-  color: var(--light-font-c);
+  color: $light-font-c;
 }
 
 /*Home page*/
 .home-page {
-  background-color: #fef7ff;
+  background-color: $primary;
 
 }
 .home {
@@ -209,19 +209,19 @@ body {
   line-height: 1.5;
 }
 .home-name {
-  color: #fef7ff;
+  color: $primary;
   font-size: 3em;
   font-style: italic;
 }
 
 .home-motto {
-  color: #fef7ff;
+  color: $primary;
   font-size: 1.5em;
 }
 
 .home-links {
   text-decoration: none;
-  color: #fef7ff;
+  color: $primary;
 }
 
 .home-links:hover {
@@ -258,7 +258,7 @@ body {
   text-transform: uppercase;
   font-weight: bolder;
   font-size: larger;
-  color: #fef7ff;
+  color: $primary;
 }
 
 
@@ -350,7 +350,7 @@ img {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: #fef7ff;
+  color: $primary;
   font-weight: bolder;
   font-size: 18px;
   transition: 0.6s ease;
@@ -423,7 +423,7 @@ form {
 .form-field textarea,
 .form-field select {
   width: 100%;
-  border-color: var(--menu-bg-color);
+  border-color: $menu-bg-color;
   background-color: #cacaca;
   color: rgb(66, 66, 66);
   padding: 5px;
@@ -431,7 +431,7 @@ form {
 }
 
 .button {
-  background-color: var(--menu-bg-color);
+  background-color: $menu-bg-color;
   padding: 10px 30px;
   border-radius: 5px;
   border: 0;
@@ -440,7 +440,7 @@ form {
 }
 
 .button:hover {
-  background-color: var(--button-darker-c);
+  background-color: $button-darker-c;
   padding: 10px 30px;
   border-radius: 5px;
   border: 0;
@@ -505,23 +505,23 @@ table.price-list-table {
 .float-right {
   float: right;
   border-radius: 0 20px 20px 20px;
-  margin-top: var(--spacer);
-  margin-bottom: var(--spacer);
+  margin-top: $spacer;
+  margin-bottom: $spacer;
   margin-right: 0;
-  margin-left: var(--spacer);
+  margin-left: $spacer;
 }
 
 .float-left {
   float: left;
   border-radius: 20px 0 20px 20px;
-  margin-top: var(--spacer);
-  margin-bottom: var(--spacer);
+  margin-top: $spacer;
+  margin-bottom: $spacer;
   margin-left: 0;
-  margin-right: var(--spacer);
+  margin-right: $spacer;
 }
 
 .border {
-  border: 2px solid var(--dark-c);
+  border: 2px solid $dark-c;
 }
 
 @media screen and (min-width: 1000px) {
@@ -545,11 +545,11 @@ table.price-list-table {
   }
 
   .big-headline {
-    margin: var(--spacer) 0;
-    font-size: var(--bigger-font);
+    margin: $spacer 0;
+    font-size: $bigger-font;
   }
   .smaller-headline {
-    margin: calc(0.8 * var(--spacer)) 0;
-    font-size: var(--smaller-font);
+    margin: calc(0.8 * $spacer) 0;
+    font-size: $smaller-font;
   }
 }
