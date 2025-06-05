@@ -118,7 +118,7 @@ body {
   list-style: none;
 }
 
-.menu li a {
+.menu-link {
   text-decoration: none;
   padding: 14px 20px;
   min-height: 50px;
@@ -128,9 +128,9 @@ body {
   font-weight: bold;
 }
 
-.menu li a:hover,
-.menu li a:active,
-.menu li a:focus {
+.menu-link:hover,
+.menu-link:active,
+.menu-link:focus {
   background-color: #f0e4ff;
   border: 1px solid #f0e4ff;
   color: black;
@@ -152,7 +152,7 @@ body {
   background-color: #f0e4ff;
 }
 
-.home {
+.hero {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/provence1_dark2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -177,17 +177,26 @@ body {
 
 .home-name-motto {
   line-height: 1.5;
+  color: #f0e4ff;
 }
 
 .home-name {
-  color: #f0e4ff;
-  font-size: 3em;
+  font-size: 2em;
   font-style: italic;
+}
+@media screen and (min-width: 1200px) {
+  .home-name {
+    font-size: 5em;
+  }
 }
 
 .home-motto {
-  color: #f0e4ff;
   font-size: 1.5em;
+}
+@media screen and (min-width: 1200px) {
+  .home-motto {
+    font-size: 3em;
+  }
 }
 
 .home-links {
@@ -210,7 +219,11 @@ body {
   flex-shrink: 0;
   padding: 30px;
   flex-wrap: wrap;
-  flex-basis: 50%;
+}
+@media screen and (min-width: 1200px) {
+  .circles {
+    flex-basis: 25%;
+  }
 }
 
 .circle {
@@ -226,6 +239,12 @@ body {
   font-weight: bolder;
   font-size: larger;
   color: #f0e4ff;
+}
+@media screen and (min-width: 1200px) {
+  .circle {
+    width: 200px;
+    min-height: 200px;
+  }
 }
 
 .circle-services {
@@ -256,21 +275,6 @@ img {
   width: 100%;
 }
 
-@media screen and (min-width: 1200px) {
-  .home-name {
-    font-size: 5em;
-  }
-  .home-motto {
-    font-size: 2em;
-  }
-  .circle {
-    width: 200px;
-    min-height: 200px;
-  }
-  .circles {
-    flex-basis: 25%;
-  }
-}
 /*Portfolio page*/
 /* Slideshow container */
 .slideshow-container {
@@ -300,8 +304,7 @@ img {
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+.prev {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -317,15 +320,28 @@ img {
      -moz-user-select: none;
           user-select: none;
 }
+.prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
-/* Position the "next button" to the right */
 .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #f0e4ff;
+  font-weight: bolder;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -336,12 +352,23 @@ img {
   flex-direction: column;
   gap: 60px;
 }
+@media screen and (min-width: 1000px) {
+  .about-me-info {
+    flex-direction: row;
+  }
+}
 
 .photo-me {
   margin: 20px auto;
   width: 100%;
   border-radius: 50%;
-  box-shadow: 2px 2px 2px silver;
+  box-shadow: 2px 6px 8px silver;
+}
+@media screen and (min-width: 1000px) {
+  .photo-me .photo-me {
+    position: absolute;
+    bottom: -300px;
+  }
 }
 
 .photo-architect {
@@ -350,6 +377,13 @@ img {
   flex: 0 0 33.3333333333%;
   min-width: 250px;
   max-width: 300px;
+}
+@media screen and (min-width: 1000px) {
+  .photo-architect {
+    order: 2;
+    max-width: 400px;
+    position: relative;
+  }
 }
 
 .contact-info {
@@ -388,8 +422,8 @@ form {
 .form-field select {
   width: 100%;
   border-color: #865a91;
-  background-color: #cacaca;
-  color: rgb(66, 66, 66);
+  background-color: #e2e2e2;
+  color: rgb(37, 37, 37);
   padding: 5px;
   border-radius: 5px;
 }
@@ -426,7 +460,7 @@ table.price-list-table {
 .price-list-table td,
 .price-list-table th {
   text-align: left;
-  border-bottom: 2px solid #282425;
+  border-bottom: 2px solid #2e1e35;
   padding: 10px 5px;
 }
 
