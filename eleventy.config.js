@@ -4,6 +4,8 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
   // Zkopírovat složku css/ to _site/css/
   eleventyConfig.addPassthroughCopy("css");
+  // Zkopírovat složku css/ to _site/javascript/
+   eleventyConfig.addPassthroughCopy("javascript");
 }
 
 export const config = {
