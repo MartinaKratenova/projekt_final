@@ -256,20 +256,20 @@ body {
   border-radius: 50%;
   width: 150px;
   min-height: 150px;
-  border: 2px solid #865a91;
   text-align: center;
   justify-content: center;
   align-content: center;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bolder;
-  font-size: larger;
+  font-size: 1em;
   color: #f0e4ff;
 }
 @media screen and (min-width: 1200px) {
   .circle {
     width: 200px;
     min-height: 200px;
+    font-size: 1.5em;
   }
 }
 
@@ -326,7 +326,7 @@ img {
   max-height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 /* Next & previous buttons */
@@ -549,7 +549,7 @@ table.price-list-table {
 }
 
 .border {
-  border: 2px solid #2e1e35;
+  border: 1px solid #2e1e35;
 }
 
 @media screen and (min-width: 1000px) {

@@ -327,7 +327,6 @@
     width: 150px;
     min-height: 150px;
 
-    border: 2px solid $menu-bg-color;
     text-align: center;
     justify-content: center;
     align-content: center;
@@ -335,7 +334,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: larger;
+    font-size: $small-font;
     color: $primary;
 
     @media screen and (min-width: 1200px) {
@@ -344,7 +343,7 @@
 
         width: 200px;
         min-height: 200px;
-
+        font-size: $small-bigger-font;
       }
     }
   }
@@ -403,7 +402,7 @@
     width: 600px;
     max-height: 400px;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 5px;
   }
 
   /* Next & previous buttons */
@@ -643,7 +642,7 @@
   }
 
   .border {
-    border: 2px solid $dark-c;
+    border: 1px solid $dark-c;
   }
 
   @media screen and (min-width: $screen-width) {
