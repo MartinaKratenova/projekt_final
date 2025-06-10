@@ -142,7 +142,8 @@ body {
 
 .menu-link:hover,
 .menu-link:active,
-.menu-link:focus {
+.menu-link:focus,
+.isActive {
   background-color: #f0e4ff;
   border: 1px solid #f0e4ff;
   color: black;

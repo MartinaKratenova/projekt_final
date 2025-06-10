@@ -178,11 +178,15 @@
 
   .menu-link:hover,
   .menu-link:active,
-  .menu-link:focus {
+  .menu-link:focus,
+  .isActive {
     background-color: $primary;
     border: 1px solid $primary;
     color: black;
+  
   }
+  
+
 
   /*Footer*/
 
