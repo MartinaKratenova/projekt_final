@@ -20,6 +20,14 @@ body {
   background-color: white;
 }
 
+.page-layout-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  min-height: 100vh;
+}
+
 .container {
   max-width: 80%;
   margin: 0 auto;
@@ -66,6 +74,10 @@ body {
   display: flex;
   flex-direction: row;
   list-style: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+  width: 1000px;
 }
 
 .breadcrumbs-item::before {

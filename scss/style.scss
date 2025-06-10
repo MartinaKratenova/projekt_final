@@ -34,6 +34,7 @@
   html,
   body,
   div {
+
     margin: 0;
     padding: 0;
   }
@@ -42,6 +43,15 @@
     font-size: 1rem;
     font-family: "Montserrat", sans-serif;
     background-color: $secondary;
+  }
+
+  .page-layout-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    min-height: 100vh;
+
   }
 
   .container {
@@ -94,11 +104,17 @@
         white 95%);
   }
 
+
+
   /*breadcrubms*/
   .breadcrumbs-list {
     display: flex;
     flex-direction: row;
     list-style: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+    width: $screen-width;
   }
 
   .breadcrumbs-item::before {
@@ -183,9 +199,9 @@
     background-color: $primary;
     border: 1px solid $primary;
     color: black;
-  
+
   }
-  
+
 
 
   /*Footer*/
