@@ -219,6 +219,7 @@
   /*Home page*/
   .home-page {
     background-color: $primary;
+    min-height: 100vh;
 
   }
 
@@ -377,13 +378,7 @@
     width: 100%;
   }
 
-
-
-
-
-
   /*Portfolio page*/
-
 
   /* Slideshow container */
   .slideshow-container {

@@ -175,6 +175,7 @@ body {
 /*Home page*/
 .home-page {
   background-color: #f0e4ff;
+  min-height: 100vh;
 }
 
 .hero {
