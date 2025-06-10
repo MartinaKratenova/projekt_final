@@ -1,8 +1,10 @@
-@use 'colors';
+@use 'color' as color;
+@use 'base' as base;
+@use 'fonts' as font;
 
 
 .home-page {
-    background-color: $primary;
+    background-color: color.$primary;
     min-height: 100vh;
 
   }
@@ -43,18 +45,18 @@
 
   .home-name-motto {
     line-height: 1.5;
-    color: $primary;
+    color: color.$primary;
   }
 
 
   .home-name {
-    font-size: $hero-font-size-1;
+    font-size: font.$hero-font-size-1;
     font-style: italic;
 
-    @media screen and (min-width: $screen-width) {
+    @media screen and (min-width: base.$screen-width) {
 
       & {
-        font-size: $hero-font-size-2;
+        font-size: font.$hero-font-size-2;
 
       }
 
@@ -63,12 +65,12 @@
 
   .home-motto {
 
-    font-size: $hero-motto-font-size-1;
+    font-size: font.$hero-motto-font-size-1;
 
-    @media screen and (min-width: $screen-width) {
+    @media screen and (min-width: base.$screen-width) {
 
       & {
-        font-size: $hero-motto-font-size-2;
+        font-size: font.$hero-motto-font-size-2;
       }
 
     }
@@ -76,7 +78,7 @@
 
   .home-links {
     text-decoration: none;
-    color: $primary;
+    color: color.$primary;
   }
 
   .home-links:hover {
@@ -94,7 +96,7 @@
     padding: 30px;
     flex-wrap: wrap;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: base.$screen-width) {
 
       & {
         flex-basis: 25%;
@@ -116,16 +118,16 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: $small-font;
-    color: $primary;
+    font-size: font.$small-font;
+    color: color.$primary;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: base.$screen-width) {
 
       & {
 
         width: 200px;
         min-height: 200px;
-        font-size: $small-bigger-font;
+        font-size: font.$small-bigger-font;
       }
     }
   }

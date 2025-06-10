@@ -1,4 +1,4 @@
-@use 'colors';
+@use 'color' as color;
 
  $spacer: 30px;
  $screen-width: 1000px;
@@ -23,9 +23,9 @@
    img {
     width: 100%;
   }
-
+$x: red;
   body {
-    background-color: $secondary;
+    background-color: color.$secondary;
   }
 
   .page-layout-container {
@@ -48,13 +48,13 @@
   }
 
   .odd-section {
-    background-color: $secondary;
+    background-color: color.$secondary;
   }
 
   .even-section {
-    background-color: $primary;
+    background-color: color.$primary;
     background-image: linear-gradient(to top right,
-        $primary 75%,
+        color.$primary 75%,
         white 95%);
   }
 
@@ -71,6 +71,9 @@
 
   .list-item-checked {
     list-style-type: none;
+    text-align: left;
+    list-style-position: outside;
+    
   }
 
   .list-item-checked::before {
@@ -86,7 +89,7 @@
 
 
     .border {
-    border: 1px solid $dark-c;
+    border: 1px solid color.$dark-c;
   }
 
   @media screen and (min-width: $screen-width) {

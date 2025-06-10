@@ -1,5 +1,4 @@
-@use 'base';
-@use 'colors';
+@use 'base' as base;
 
   $big-font: 2em;
   $small-font: 1em;
@@ -20,14 +19,14 @@
   
 
   .big-headline {
-    margin: calc(0.8 * $spacer) 0;
+    margin: calc(0.8 * base.$spacer) 0;
     font-size: $big-font;
 
-    @media screen and (min-width: $screen-width) {
+    @media screen and (min-width: base.$screen-width) {
 
 
       & {
-        margin: $spacer 0;
+        margin: base.$spacer 0;
         font-size: $bigger-font;
       }
 
@@ -35,14 +34,14 @@
   }
 
   .smaller-headline {
-    margin: calc(0.6 * $spacer) 0;
+    margin: calc(0.6 * base.$spacer) 0;
     font-size: $small-font;
 
-    @media screen and (min-width: $screen-width) {
+    @media screen and (min-width: base.$screen-width) {
 
 
       & {
-        margin: calc(0.8 * $spacer) 0;
+        margin: calc(0.8 * base.$spacer) 0;
         font-size: $small-bigger-font;
       }
     }

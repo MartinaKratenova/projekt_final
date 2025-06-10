@@ -1,8 +1,8 @@
-@use 'colors';
+@use 'color' as color;
 
   .header {
     min-height: 80px;
-    background-color: $menu-bg-color;
+    background-color: color.$menu-bg-color;
   }
 
   .menu-picture {
@@ -29,8 +29,8 @@
   }
 
   .menu {
-    background-color: $menu-bg-color;
-    background-image: linear-gradient(to right, $menu-bg-dark-color, $menu-bg-color);
+    background-color: color.$menu-bg-color;
+    background-image: linear-gradient(to right, color.$menu-bg-dark-color, color.$menu-bg-color);
     min-height: 50px;
     width: 100%;
     display: flex;
@@ -57,7 +57,7 @@
     min-height: 50px;
     display: block;
     text-transform: uppercase;
-    color: $light-font-c;
+    color: color.$light-font-c;
     font-weight: bold;
   }
 
@@ -65,8 +65,8 @@
   .menu-link:active,
   .menu-link:focus,
   .isActive {
-    background-color: $primary;
-    border: 1px solid $primary;
+    background-color: color.$primary;
+    border: 1px solid color.$primary;
     color: black;
 
   }

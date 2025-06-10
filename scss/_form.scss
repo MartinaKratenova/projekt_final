@@ -1,7 +1,9 @@
-form {
-    width: 100%;
+@use 'color' as color;
+
+  form {
+        width: 100%;
     max-width: 400px;
-  }
+      }
 
   .form {
     justify-items: center;
@@ -22,26 +24,26 @@ form {
   .form-field textarea,
   .form-field select {
     width: 100%;
-    border-color: $menu-bg-color;
-    background-color: #e2e2e2;
+    border-color: color.$menu-bg-color;
+    background-color: #ebebeb;
     color: rgb(37, 37, 37);
     padding: 5px;
     border-radius: 5px;
   }
 
   .button {
-    background-color: $menu-bg-color;
+    background-color: color.$menu-bg-color;
     padding: 10px 30px;
     border-radius: 5px;
     border: 0;
-    color: $form-btn-text-c;
+    color: color.$form-btn-text-c;
     width: 100%;
   }
 
   .button:hover {
-    background-color: $button-darker-c;
+    background-color: color.$button-darker-c;
     padding: 10px 30px;
     border-radius: 5px;
     border: 0;
-    color: $form-btn-text-c;
+    color: color.$form-btn-text-c;
   }

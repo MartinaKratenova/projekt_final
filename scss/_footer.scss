@@ -1,11 +1,11 @@
- @use 'colors';
+ @use 'color' as color;
  
  .footer {
     margin: 0;
     padding: 20px 0 20px 0;
     width: 100%;
-    background-color: $dark-c;
+    background-color: color.$dark-c;
     font-size: 0.8rem;
     text-align: center;
-    color: $light-font-c;
+    color: color.$light-font-c;
   }

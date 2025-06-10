@@ -1,4 +1,4 @@
-@use 'colors';
+@use 'color' as color;
 
 table.price-list-table {
     border-spacing: 0px;
@@ -13,7 +13,7 @@ table.price-list-table {
   .price-list-table td,
   .price-list-table th {
     text-align: left;
-    border-bottom: 2px solid $dark-c;
+    border-bottom: 2px solid color.$dark-c;
     padding: 10px 5px;
   }
 
