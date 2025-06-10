@@ -1,0 +1,65 @@
+.about-me-info {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    @media screen and (min-width: $screen-width) {
+      & {
+        flex-direction: row;
+      }
+
+    }
+  }
+
+  .photo-me {
+    margin: 20px auto;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 2px 6px 8px silver;
+
+    @media screen and (min-width: $screen-width) {
+
+
+      & {
+        position: absolute;
+        bottom: -300px;
+      }
+
+    }
+  }
+
+  .photo-architect {
+    justify-self: center;
+    align-self: center;
+    flex: 0 0 calc(100% / 3);
+    min-width: 250px;
+    max-width: 300px;
+
+    @media screen and (min-width: $screen-width) {
+
+      & {
+        order: 2;
+        max-width: 400px;
+        position: relative;
+      }
+
+    }
+  }
+
+  .contact-info {
+    justify-items: left;
+    justify-self: center;
+    width: 400px;
+
+    @media screen and (min-width: $screen-width) {
+
+      & {
+        justify-self: left;
+      }
+
+    }
+  }
+
+  .contact-info-text {
+    text-align: left;
+  }

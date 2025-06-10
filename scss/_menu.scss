@@ -1,0 +1,72 @@
+@use 'colors';
+
+  .header {
+    min-height: 80px;
+    background-color: $menu-bg-color;
+  }
+
+  .menu-picture {
+    width: 100%;
+    background-color: #282425;
+    background-image: url(/images/menu-bgr-img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+  }
+
+  .logo {
+    width: 300px;
+    margin: 10px 10px;
+    position: absolute;
+    bottom: -30px;
+  }
+
+  .name {
+    display: flex;
+    align-items: center;
+    color: #fef7ff;
+    position: relative;
+  }
+
+  .menu {
+    background-color: $menu-bg-color;
+    background-image: linear-gradient(to right, $menu-bg-dark-color, $menu-bg-color);
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-shrink: 0;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-items {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .menu-link {
+    text-decoration: none;
+    padding: 14px 20px;
+    min-height: 50px;
+    display: block;
+    text-transform: uppercase;
+    color: $light-font-c;
+    font-weight: bold;
+  }
+
+  .menu-link:hover,
+  .menu-link:active,
+  .menu-link:focus,
+  .isActive {
+    background-color: $primary;
+    border: 1px solid $primary;
+    color: black;
+
+  }

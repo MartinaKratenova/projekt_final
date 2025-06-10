@@ -1,0 +1,18 @@
+  @use 'base';
+  .float-right {
+    float: right;
+    border-radius: 0 20px 20px 20px;
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+    margin-right: 0;
+    margin-left: $spacer;
+  }
+
+  .float-left {
+    float: left;
+    border-radius: 20px 0 20px 20px;
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+    margin-left: 0;
+    margin-right: $spacer;
+  }

@@ -1,0 +1,47 @@
+form {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .form {
+    justify-items: center;
+  }
+
+  .form-field label {
+    display: block;
+    font-size: 14px;
+    color: rgb(77, 77, 77);
+  }
+
+  .form-field {
+    margin-bottom: 10px;
+  }
+
+  .form-field input[type="text"],
+  .form-field input[type="email"],
+  .form-field textarea,
+  .form-field select {
+    width: 100%;
+    border-color: $menu-bg-color;
+    background-color: #e2e2e2;
+    color: rgb(37, 37, 37);
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .button {
+    background-color: $menu-bg-color;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 0;
+    color: $form-btn-text-c;
+    width: 100%;
+  }
+
+  .button:hover {
+    background-color: $button-darker-c;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 0;
+    color: $form-btn-text-c;
+  }

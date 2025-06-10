@@ -1,0 +1,21 @@
+  .breadcrumbs-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+    width: 400px;
+  }
+
+  .breadcrumbs-item::before {
+    content: "";
+    display: inline-block;
+    height: 1.5em;
+    width: 2em;
+    margin-bottom: -5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/images/chevron_fw.svg);
+  }

@@ -1,0 +1,50 @@
+@use 'base';
+@use 'colors';
+
+  $big-font: 2em;
+  $small-font: 1em;
+  $bigger-font: 3em;
+  $small-bigger-font: 1.5em;
+
+  $hero-font-size-1: 2em;
+  $hero-motto-font-size-1: 1.5em;
+  $hero-font-size-2: 5em;
+  $hero-motto-font-size-2: 3em;
+
+  
+  body {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+
+  }
+  
+
+  .big-headline {
+    margin: calc(0.8 * $spacer) 0;
+    font-size: $big-font;
+
+    @media screen and (min-width: $screen-width) {
+
+
+      & {
+        margin: $spacer 0;
+        font-size: $bigger-font;
+      }
+
+    }
+  }
+
+  .smaller-headline {
+    margin: calc(0.6 * $spacer) 0;
+    font-size: $small-font;
+
+    @media screen and (min-width: $screen-width) {
+
+
+      & {
+        margin: calc(0.8 * $spacer) 0;
+        font-size: $small-bigger-font;
+      }
+    }
+  }
+
