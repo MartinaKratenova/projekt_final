@@ -1,0 +1,25 @@
+{
+  "name": "projekt_final",
+  "version": "1.0.0",
+  "description": "Závěrečný projekt pro kurz Staň se koderkou",
+  "main": "portfolioScript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+        "serve": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinaKratenova/projekt_final.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinaKratenova/projekt_final/issues"
+  },
+  "homepage": "https://github.com/MartinaKratenova/projekt_final#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.1"
+  }
+}
