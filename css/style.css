@@ -207,7 +207,7 @@ body {
   color: #fef7ff;
   font-weight: bold;
   cursor: pointer;
-  text-align: right;
+  text-align: left;
 }
 
 .menu-link:hover,
