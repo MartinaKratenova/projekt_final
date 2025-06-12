@@ -190,7 +190,7 @@ body {
   padding: 0;
   overflow: auto;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .menu-items {
     display: flex;
     flex-direction: row;
@@ -219,7 +219,7 @@ body {
   color: black;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .menu-toggler {
     display: none;
   }
@@ -235,13 +235,13 @@ body {
 .menu-item:last-child {
   border-bottom: 0;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .menu-item .menu-item {
     border-bottom: 0;
   }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 899px) {
   .menu__checkbox:checked ~ .menu-items {
     display: block;
   }
@@ -249,7 +249,7 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .menu-toggler {
     display: none;
   }

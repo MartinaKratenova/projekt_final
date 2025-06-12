@@ -1,4 +1,5 @@
 @use 'color' as color;
+$menu-screen-width: 900px;
 
 .header {
   min-height: 80px;
@@ -19,6 +20,8 @@
   margin: 10px 10px;
   position: absolute;
   top: -60px;
+
+
 }
 
 .name {
@@ -51,7 +54,7 @@
 	padding: 0;
   overflow: auto;
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: $menu-screen-width) {
 
 	&{
 		display: flex ;
@@ -84,7 +87,7 @@
 
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: $menu-screen-width) {
 
   	.menu-toggler{
 		display: none;
@@ -108,7 +111,7 @@
     border-bottom: 0;
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: $menu-screen-width) {
 
 	.menu-item{
 	border-bottom: 0;
@@ -118,7 +121,7 @@
 }
 
 
-@media screen and (max-width:799px) {
+@media screen and (max-width: calc($menu-screen-width - 1px)) {
 .menu__checkbox:checked ~ .menu-items{
 	display: block;
 }
@@ -130,7 +133,7 @@
 
  }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: $menu-screen-width) {
 
   	.menu-toggler{
 		display: none;
