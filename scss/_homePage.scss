@@ -45,7 +45,7 @@
 
   .home-name-motto {
     line-height: 1.5;
-    color: color.$primary;
+    color: color.$secondary;
   }
 
 
@@ -78,7 +78,7 @@
 
   .home-links {
     text-decoration: none;
-    color: color.$primary;
+    color: color.$secondary;
   }
 
   .home-links:hover {
@@ -119,7 +119,7 @@
     text-transform: uppercase;
     font-weight: bolder;
     font-size: font.$small-font;
-    color: color.$primary;
+    color: color.$secondary;
 
     @media screen and (min-width: base.$screen-width) {
 
