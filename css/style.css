@@ -157,7 +157,7 @@ body {
 }
 
 .logo {
-  width: 300px;
+  width: 280px;
   margin: 10px 10px;
   position: absolute;
   top: -60px;
@@ -190,6 +190,12 @@ body {
   padding: 0;
   overflow: auto;
 }
+@media screen and (min-width: 800px) {
+  .menu-items {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 .menu-toggler,
 .menu-link {
@@ -201,6 +207,7 @@ body {
   color: #fef7ff;
   font-weight: bold;
   cursor: pointer;
+  text-align: right;
 }
 
 .menu-link:hover,
@@ -212,6 +219,11 @@ body {
   color: black;
 }
 
+@media screen and (min-width: 800px) {
+  .menu-toggler {
+    display: none;
+  }
+}
 .menu__checkbox {
   position: absolute;
   left: -9999px;
@@ -220,9 +232,13 @@ body {
 .menu-item {
   border-bottom: 1px solid white;
 }
-
 .menu-item:last-child {
   border-bottom: 0;
+}
+@media screen and (min-width: 800px) {
+  .menu-item .menu-item {
+    border-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 799px) {
@@ -236,10 +252,6 @@ body {
 @media screen and (min-width: 800px) {
   .menu-toggler {
     display: none;
-  }
-  .menu-items {
-    display: flex;
-    flex-direction: row;
   }
   .menu-item {
     border-bottom: 0;
@@ -490,7 +502,6 @@ body {
 .contact-info {
   justify-items: left;
   justify-self: center;
-  width: 400px;
 }
 @media screen and (min-width: 1000px) {
   .contact-info {

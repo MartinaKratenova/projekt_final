@@ -15,7 +15,7 @@
 }
 
 .logo {
-  width: 300px;
+  width: 280px;
   margin: 10px 10px;
   position: absolute;
   top: -60px;
@@ -51,6 +51,14 @@
 	padding: 0;
   overflow: auto;
 
+  @media screen and (min-width: 800px) {
+
+	&{
+		display: flex ;
+    flex-direction: row;
+
+	}
+}
 }
 
 .menu-toggler,
@@ -63,6 +71,7 @@
   color: color.$light-font-c;
   font-weight: bold;
   cursor: pointer;
+  text-align: right;
 }
 
 .menu-link:hover,
@@ -75,6 +84,16 @@
 
 }
 
+@media screen and (min-width: 800px) {
+
+  	.menu-toggler{
+		display: none;
+	}
+
+	
+
+}
+
 .menu__checkbox {
   position: absolute;
   left: -9999px;
@@ -84,18 +103,26 @@
 
 .menu-item{
 	border-bottom: 1px solid white;
-}
-.menu-item:last-child{
-  border-bottom: 0;
-}
 
+  &:last-child{
+    border-bottom: 0;
+  }
+
+  @media screen and (min-width: 800px) {
+
+	.menu-item{
+	border-bottom: 0;
+}
+	
+}
+}
 
 
 @media screen and (max-width:799px) {
 .menu__checkbox:checked ~ .menu-items{
 	display: block;
 }
-.menu__checkbox:checked~ .menu-toggler{
+.menu__checkbox:checked ~ .menu-toggler{
   display: none;
 }
 
@@ -110,12 +137,6 @@
 	}
 
 
-
-	.menu-items{
-		display: flex ;
-    flex-direction: row;
-
-	}
 	.menu-item{
 	border-bottom: 0;
 }
