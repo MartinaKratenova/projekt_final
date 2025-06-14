@@ -28,7 +28,7 @@ $menu-screen-width: 900px;
   display: flex;
   align-items: center;
   color: #fef7ff;
-  
+
 }
 
 .menu {
@@ -50,21 +50,21 @@ $menu-screen-width: 900px;
 .menu-items {
   display: none;
   list-style: none;
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
   overflow: auto;
 
   @media screen and (min-width: $menu-screen-width) {
 
-	&{
-		display: flex ;
-    flex-direction: row;
+    & {
+      display: flex;
+      flex-direction: row;
 
-	}
-}
+    }
+  }
 }
 
-.menu-toggler,
+
 .menu-link {
   text-decoration: none;
   padding: 14px 20px;
@@ -87,62 +87,71 @@ $menu-screen-width: 900px;
 
 }
 
-@media screen and (min-width: $menu-screen-width) {
 
-  	.menu-toggler{
-		display: none;
-	}
-
-	
-
-}
 
 .menu__checkbox {
   position: absolute;
   left: -9999px;
 
 
+  @media screen and (max-width: calc($menu-screen-width - 1px)) {
+    &:checked~.menu-items {
+      display: block;
+    }
+
+    &:checked~.menu-toggler {
+      display: block;
+    }
+
+    &:checked~.menu-toggler {
+      border-bottom: 1px solid white;
+      display: block;
+    }
+
+  }
+
 }
 
-.menu-item{
-	border-bottom: 1px solid white;
+.menu-item {
+  border-bottom: 1px solid white;
 
-  &:last-child{
+  &:last-child {
     border-bottom: 0;
   }
 
   @media screen and (min-width: $menu-screen-width) {
 
-	.menu-item{
-	border-bottom: 0;
-}
-	
-}
-}
+    & {
+      border-bottom: 0;
+    }
 
+  }
 
-@media screen and (max-width: calc($menu-screen-width - 1px)) {
-.menu__checkbox:checked ~ .menu-items{
-	display: block;
-}
-.menu__checkbox:checked ~ .menu-toggler{
-  display: none;
 }
 
+.menu-toggler {
+  text-decoration: none;
+  padding: 14px 20px;
+  min-height: 50px;
+  display: block;
+  text-transform: uppercase;
+  color: color.$light-font-c;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+
+  @media screen and (min-width: $menu-screen-width) {
+
+    & {
+      display: none;
+    }
+  }
 
 
- }
 
-@media screen and (min-width: $menu-screen-width) {
-
-  	.menu-toggler{
-		display: none;
-	}
-
-
-	.menu-item{
-	border-bottom: 0;
 }
-	
 
+.menu-display {
+  display: flex;
+  flex-direction: column;
 }

@@ -215,7 +215,6 @@ body {
   }
 }
 
-.menu-toggler,
 .menu-link {
   text-decoration: none;
   padding: 14px 20px;
@@ -237,14 +236,21 @@ body {
   color: black;
 }
 
-@media screen and (min-width: 900px) {
-  .menu-toggler {
-    display: none;
-  }
-}
 .menu__checkbox {
   position: absolute;
   left: -9999px;
+}
+@media screen and (max-width: 899px) {
+  .menu__checkbox:checked ~ .menu-items {
+    display: block;
+  }
+  .menu__checkbox:checked ~ .menu-toggler {
+    display: block;
+  }
+  .menu__checkbox:checked ~ .menu-toggler {
+    border-bottom: 1px solid white;
+    display: block;
+  }
 }
 
 .menu-item {
@@ -254,27 +260,33 @@ body {
   border-bottom: 0;
 }
 @media screen and (min-width: 900px) {
-  .menu-item .menu-item {
+  .menu-item {
     border-bottom: 0;
   }
 }
 
-@media screen and (max-width: 899px) {
-  .menu__checkbox:checked ~ .menu-items {
-    display: block;
-  }
-  .menu__checkbox:checked ~ .menu-toggler {
-    display: none;
-  }
+.menu-toggler {
+  text-decoration: none;
+  padding: 14px 20px;
+  min-height: 50px;
+  display: block;
+  text-transform: uppercase;
+  color: #fef7ff;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
 }
 @media screen and (min-width: 900px) {
   .menu-toggler {
     display: none;
   }
-  .menu-item {
-    border-bottom: 0;
-  }
 }
+
+.menu-display {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer {
   margin: 0;
   padding: 20px 0 20px 0;
