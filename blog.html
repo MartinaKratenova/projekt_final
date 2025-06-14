@@ -3,24 +3,25 @@ layout: templates/template.njk
 title: Inspirace
 activeBlog: isActive
 ---
-    <section class="blog-articles-list section odd-section">
-      <div class="container">
-        <h1 class="big-headline">Inspirace</h1>
-      </div>
 
-{% for article in collections.blog  %}
-<div class="blog-article">
-<div class="container">
-<h2 class="blog-article-headline smaller-headline">{{ article.data.title }}</h2>
-<p class="perex"> {{article.data.perex}}</p>
-<p><a href="{{ article.url  }}" class="blog-links">Celý článek</a></p>
-</div></div>
+<section class="blog-articles-list section odd-section">
+  <div class="container">
+    <h1 class="big-headline">Inspirace</h1>
+  </div>
 
+  {% for article in collections.blog %}
 
+  <div class="blog-article">
+    <div class="container">
+      <h2 class="blog-article-headline smaller-headline">
+        {{ article.data.title }}
+      </h2>
+      <p class="perex">{{ article.data.perex }}</p>
+      <p><a href="{{ article.url  }}" class="blog-links">Celý článek</a></p>
+    </div>
+  </div>
 
-<hr>
+  <hr class="blog-divider"/>
 
-{% endfor %}
-
-      
-    </section>
+  {% endfor %}
+</section>

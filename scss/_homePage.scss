@@ -96,13 +96,6 @@
     padding: 30px;
     flex-wrap: wrap;
 
-    @media screen and (min-width: base.$screen-width) {
-
-      & {
-        flex-basis: 25%;
-      }
-
-    }
 
   }
 

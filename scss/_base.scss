@@ -1,128 +1,137 @@
 @use 'color' as color;
 
- $spacer: 30px;
- $screen-width: 1000px;
+$spacer: 30px;
+$screen-width: 1000px;
 
 *,
-  :after,
-  :before {
-    box-sizing: border-box;
-  }
+:after,
+:before {
+  box-sizing: border-box;
+}
 
-  h1,
-  h2,
-  h3,
-  html,
-  body,
-  div {
+h1,
+h2,
+h3,
+html,
+body,
+div {
 
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-   img {
-    width: 100%;
-  }
+img {
+  width: 100%;
+}
+
 $x: red;
-  body {
-    background-color: color.$secondary;
-  }
 
-  .page-layout-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    min-height: 100vh;
+body {
+  background-color: color.$secondary;
+}
 
-  }
+.page-layout-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  min-height: 100vh;
 
-  .container {
-    max-width: 80%;
-    margin: 0 auto;
-  }
+}
 
-    .section {
-    padding: calc($spacer) * 1.5 0;
-    margin: 0;
-  }
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
 
-  .odd-section {
-    background-color: color.$secondary;
-  }
+.section {
+  padding: calc($spacer) * 1.5 0;
+  margin: 0;
+}
 
-  .even-section {
-    background-color: color.$primary;
-    background-image: linear-gradient(to top right,
-        color.$primary 75%,
-        white 95%);
-  }
+.odd-section {
+  background-color: color.$secondary;
+}
 
-
-  .thank-you-text {
-    align-self: center;
-    justify-self: center;
-    font-size: xx-large;
-    justify-content: center;
-    padding: 30px;
-    text-align: center;
-  }
+.even-section {
+  background-color: color.$primary;
+  background-image: linear-gradient(to top right,
+      color.$primary 75%,
+      white 95%);
+}
 
 
-  .list-item-checked {
-    list-style-type: none;
-    text-align: left;
-    list-style-position: outside;
-    
-  }
-
-  .list-item-checked::before {
-    content: "";
-    display: inline-block;
-    height: 1em;
-    width: 2em;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(/images/check_icon.svg);
-  }
+.thank-you-text {
+  align-self: center;
+  justify-self: center;
+  font-size: xx-large;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+}
 
 
-    .border {
-    border: 1px solid color.$dark-c;
-  }
+.list-item-checked {
+  list-style-type: none;
+  text-align: left;
+  list-style-position: outside;
 
+}
+
+.list-item-checked::before {
+  content: "";
+  display: inline-block;
+  height: 1em;
+  width: 2em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/images/check_icon.svg);
+}
+
+
+.border {
+  border: 1px solid color.$dark-c;
+}
+
+.about-me-text {
   @media screen and (min-width: $screen-width) {
 
-    .about-me-text {
+    & {
       order: 1;
     }
 
   }
 
-   
-  .blog-link {
-    text-decoration: none;
-    color: #282425;
-  }
+}
 
-  
+.blog-link {
+  text-decoration: none;
+  color: #282425;
+}
 
-  .blog-picture {
-    width: 500px;
-  }
 
-  .perex{
-    font-size: large;
-    font-style: italic;
-  }
 
-   .blog-links {
-    text-decoration: none;
-    color: color.$dark-c;
-  }
+.blog-picture {
+  width: 500px;
+}
 
-  .blog-links:hover {
-    font-style: italic;
-    cursor: pointer;
-  }
+.perex {
+  font-size: large;
+  font-style: italic;
+}
+
+.blog-links {
+  text-decoration: none;
+  color: color.$dark-c;
+}
+
+.blog-links:hover {
+  font-style: italic;
+  cursor: pointer;
+}
+
+.blog-divider {
+  border-color: color.$dark-c;
+  width: 80%;
+}

@@ -84,6 +84,7 @@ body {
     order: 1;
   }
 }
+
 .blog-link {
   text-decoration: none;
   color: #282425;
@@ -106,6 +107,11 @@ body {
 .blog-links:hover {
   font-style: italic;
   cursor: pointer;
+}
+
+.blog-divider {
+  border-color: #2e1e35;
+  width: 80%;
 }
 
 body {
@@ -368,11 +374,6 @@ body {
   flex-shrink: 0;
   padding: 30px;
   flex-wrap: wrap;
-}
-@media screen and (min-width: 1000px) {
-  .circles {
-    flex-basis: 25%;
-  }
 }
 
 .circle {
