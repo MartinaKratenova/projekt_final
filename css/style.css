@@ -93,6 +93,21 @@ body {
   width: 500px;
 }
 
+.perex {
+  font-size: large;
+  font-style: italic;
+}
+
+.blog-links {
+  text-decoration: none;
+  color: #2e1e35;
+}
+
+.blog-links:hover {
+  font-style: italic;
+  cursor: pointer;
+}
+
 body {
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
@@ -124,10 +139,13 @@ body {
   display: flex;
   flex-direction: row;
   list-style: none;
+  width: 80%;
+}
+
+.breadcrumbs-item {
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: clip;
-  width: 400px;
+  text-overflow: ellipsis;
 }
 
 .breadcrumbs-item::before {

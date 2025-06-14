@@ -7,54 +7,20 @@ activeBlog: isActive
       <div class="container">
         <h1 class="big-headline">Inspirace</h1>
       </div>
-      <div class="blog-article">
-        <div class="container">
-          <h2 class="blog-article-headline smaller-headline">
-            <a href="/blog/blog-bylinky" class="blog-link"
-              >Bylinková zahrádka pro radost</a
-            >
-          </h2>
-          <p>
-            Bylinková zahrádka není jen módní trend - je návratem k
-            přirozenosti, soběstačnosti a radosti z každodenní péče o živé
-            rostliny. V rámci jednoho z našich projektů jsme pro klientku v
-            jižních Čechách navrhli a realizovali kompaktní, ale velmi funkční
-            bylinkovou zahradu.
-          </p>
-        </div>
-      </div>
 
-      <div class="blog-article">
-        <div class="container">
-          <h2 class="blog-article-headline smaller-headline">
-            <a href="/blog/blog-japonska-zahrada" class="blog-link"
-              >Realizace japonské zahrady: Umění harmonie v české krajině</a
-            >
-          </h2>
-          <p>
-            V rámci naší nedávné realizace jsme dostali jedinečnou příležitost
-            navrhnout a vytvořit japonskou zahradu v soukromém rezidenčním
-            prostoru v okrajové části Brna. Zadáním bylo vytvořit prostor, který
-            bude působit klidně, harmonicky a současně bude přirozeně zapadat do
-            středoevropského kontextu.
-          </p>
-        </div>
-      </div>
+{% for article in collections.blog  %}
+<div class="blog-article">
+<div class="container">
+<h2 class="blog-article-headline smaller-headline">{{ article.data.title }}</h2>
+<p class="perex"> {{article.data.perex}}</p>
+<p><a href="{{ article.url  }}" class="blog-links">Celý článek</a></p>
+</div></div>
 
-      <div class="blog-article">
-        <div class="container">
-          <h2 class="blog-article-headline smaller-headline">
-            <a href="/blog/blog-zahrada-deti" class="blog-link">
-              Zahrada pro dětskou duši: Místo pro hru, fantazii a růst</a
-            >
-          </h2>
-          <p>
-            Každý prostor má své jedinečné poslání. U této zahrady šlo o jediné
-            - vytvořit bezpečný, hravý a inspirativní svět pro malé děti.
-            Klient, mladá rodina se dvěma předškolními dětmi, nás oslovil s
-            přáním proměnit běžnou zahradu za rodinným domem v místo, které bude
-            rozvíjet dětskou představivost.
-          </p>
-        </div>
-      </div>
+
+
+<hr>
+
+{% endfor %}
+
+      
     </section>

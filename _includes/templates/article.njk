@@ -15,9 +15,27 @@
   <body>
   <div class="page-layout-container">
 
+
+
 {% include 'partials/menu.njk' %}
 
 <div class="page-content">
+
+    <section class="breadcrumbs">
+      <div class="breadcrumbs-list">
+        <div class="breadcrumbs-item"><a href="/blog/">Inspirace</a></div>
+        <div class="breadcrumbs-item">{{headline}}</div>
+      </div>
+    </section>
+    
+    <section class="blog-article-text section">
+      <div class="container">
+        <h1 class="big-headline">{{headline}}</h1>
+        <p class="perex"> {{perex }}
+            </p>
+
+
+
     {{ content | safe }}
 </div>
 
