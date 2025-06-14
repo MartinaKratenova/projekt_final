@@ -2,10 +2,15 @@
     display: flex;
     flex-direction: row;
     list-style: none;
+    width: 80%;
+
+  }
+
+  .breadcrumbs-item {
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: clip;
-    width: 400px;
+    text-overflow: ellipsis;
+
   }
 
   .breadcrumbs-item::before {
