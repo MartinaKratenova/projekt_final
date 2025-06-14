@@ -2,6 +2,7 @@
 @use 'base' as base;
 @use 'fonts' as font;
 
+$home-screen-width: 1450px;
 
 .home-page {
     background-color: color.$primary;
@@ -28,7 +29,16 @@
 
     position: relative;
   }
-
+.logo-home{
+  max-width: 200px;
+  @media screen and (min-width: $home-screen-width) {
+    &{
+       max-width: 250px;
+    }
+  }
+  
+  
+}
 
   .home-text {
     position: absolute;
@@ -53,7 +63,7 @@
     font-size: font.$hero-font-size-1;
     font-style: italic;
 
-    @media screen and (min-width: base.$screen-width) {
+    @media screen and (min-width: $home-screen-width) {
 
       & {
         font-size: font.$hero-font-size-2;
@@ -67,7 +77,7 @@
 
     font-size: font.$hero-motto-font-size-1;
 
-    @media screen and (min-width: base.$screen-width) {
+    @media screen and (min-width: $home-screen-width) {
 
       & {
         font-size: font.$hero-motto-font-size-2;

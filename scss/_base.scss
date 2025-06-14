@@ -105,28 +105,17 @@ body {
 
 }
 
-.blog-link {
-  text-decoration: none;
-  color: #282425;
-}
-
-
-
-.blog-picture {
-  width: 500px;
-}
-
 .perex {
   font-size: large;
   font-style: italic;
 }
 
-.blog-links {
-  text-decoration: none;
+.link {
+  text-decoration: underline;
   color: color.$dark-c;
 }
 
-.blog-links:hover {
+.link:hover {
   font-style: italic;
   cursor: pointer;
 }
