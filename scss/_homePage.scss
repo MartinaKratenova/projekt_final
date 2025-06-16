@@ -29,7 +29,8 @@ $home-screen-width: 1450px;
 
     position: relative;
   }
-.logo-home{
+
+.hero-logo{
   max-width: 200px;
   @media screen and (min-width: $home-screen-width) {
     &{
@@ -40,7 +41,7 @@ $home-screen-width: 1450px;
   
 }
 
-  .home-text {
+  .hero-content {
     position: absolute;
     bottom: 0;
 
@@ -53,13 +54,13 @@ $home-screen-width: 1450px;
     padding: 30px;
   }
 
-  .home-name-motto {
+  .hero-text {
     line-height: 1.5;
     color: color.$secondary;
   }
 
 
-  .home-name {
+  .hero-name {
     font-size: font.$hero-font-size-1;
     font-style: italic;
 
@@ -73,7 +74,7 @@ $home-screen-width: 1450px;
     }
   }
 
-  .home-motto {
+  .hero-motto {
 
     font-size: font.$hero-motto-font-size-1;
 
@@ -86,12 +87,12 @@ $home-screen-width: 1450px;
     }
   }
 
-  .home-links {
+  .hero-links {
     text-decoration: none;
     color: color.$secondary;
   }
 
-  .home-links:hover {
+  .hero-links:hover {
     font-style: italic;
     cursor: pointer;
   }
